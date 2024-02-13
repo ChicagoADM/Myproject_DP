@@ -10,3 +10,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('dostavca/', views.dostavca, name='dostavca'),
 ]
+
+
+# handler404 = views.handler404
+# handler500 = views.handler500

@@ -1,5 +1,5 @@
 from django.core.paginator import Paginator
-from django.shortcuts import get_list_or_404, get_object_or_404, render
+from django.shortcuts import get_list_or_404, render
 
 from attributes.models import Products
 from attributes.utils import q_search
@@ -42,3 +42,5 @@ def product(request, product_slug):
     context = {"product": product}
 
     return render(request, "attributes/product.html", context=context)
+
+
