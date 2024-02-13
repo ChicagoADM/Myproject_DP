@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h2 style="text-align: center;"><span style="color: #ff6600; font-size: 36pt;">Контакты</span></h2>
+        <div class="delivery-info__paragraphs delivery-info__paragraphs--short">
+            <div class="contact__web-col">
+            <h2 style="text-align: center;"><span style="font-family: georgia, palatino, serif;"><a class="navbar-brand" href="#">BASKET-SHOP</a></span></h2>
+            <div class="contact__web-phone" style="text-align: center;"><span style="font-family: georgia, palatino, serif;"><a href="tel:+71234567890">+7 (123) 456-78-90 </a><small>(звонок бесплатный)</small></span></div>
+            <p style="text-align: center;"><span style="font-family: georgia, palatino, serif;">Часы работы(по Московскому времени): Будни с 8:00 до 22:00 Выходные с 8:00 до 20:00</span></p>
+            <p class="contact__web-time" style="text-align: center;"><span style="font-family: georgia, palatino, serif;">Без выходных</span></p>
+            
+            <div class="contact__web-email" style="text-align: center;"><span style="font-family: georgia, palatino, serif;">Вопросы по заказам: <a href="mailto:zakaz@basket-shop.test">zakaz@basket-shop.test</a></span></div>
+            <div class="contact__web-email" style="text-align: center;"><span style="font-family: georgia, palatino, serif;">Мы рады вашим предложениям: <a href="mailto:admin@basketshop.test">admin@basket-shop.test</a></span></div>
+            <div class="contact__web-email" style="text-align: center;"><span style="font-family: georgia, palatino, serif;">Вопросы по обмену товара: </span><a href="mailto:obmen@basket-shop.test"><span style="font-family: georgia, palatino, serif;">obmen@basket-shop.test</span></a></div>
+            </div>   
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+        <p class="m-2">{{ text_on_page }}</p>
+    </div>
+{% endblock %}
+
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 4icag0 2024</p>
+    </div>
+</footer>
+{% endblock %}
+

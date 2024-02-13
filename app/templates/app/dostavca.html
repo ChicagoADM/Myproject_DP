@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h2 style="text-align: center;"><span style="color: #ff6600; font-size: 36pt;">Доставка и оплата</span></h2>
+        <hr>
+        <div class="delivery-info__paragraphs delivery-info__paragraphs--short">
+        <pre><span style="font-family: georgia, palatino, serif; font-size: 12pt;"><strong><strong>    Товары на доставку по Москве мы передаем в течение 1-2 дней с момента оформления заказа. Как только заказ 
+будет собран,  мы позвоним вам, чтобы еще раз все проверить и договориться о дне и времени доставки.  Мы передаем 
+заказы в курьерские службы ежедневно.</strong></strong></span></pre>
+        
+        <hr>
+        
+        </div>
+        <pre><span style="font-family: georgia, palatino, serif; font-size: 12pt;"> 1.<strong> Курьер:</strong> Доставка нашим курьером в пределах МКАД до 2-х пар обуви в заказе стоит 350 рублей и возможна ежедневно с 13:00 до 18:00.
+Доставку за МКАД в ближайшее Подмосковье необходимо предварительно согласовать с оператором, а стоить она будет уже 800 рублей.</span></pre>
+        
+        <hr>
+        
+        <pre><span style="font-family: georgia, palatino, serif; font-size: 12pt;"> 2.<strong> Бесплатный самовывоз:</strong> Вы можете самостоятельно забрать заказ из любого нашего магазина. Предварительно оформите заказ 
+через сайт или позвоните в нужный вам магазин, чтобы товар зарезервировали. Когда заказ будет собран, с вами свяжется наш оператор. 
+Заказ будет ждать вас 48 часов, а&nbsp;потом мы его расформируем.</span></pre>
+        
+        <hr>
+        
+        <pre><span style="font-family: georgia, palatino, serif; font-size: 12pt;"> 3.<strong> Доставка в ПВЗ Boxberry:</strong> При оформлении заказа выбирайте удобный пункт выдачи заказа на карте города. Сроки и цена 
+доставки рассчитываются автоматически при оформлении заказа и зависят от веса посылки и точного адреса получателя.</span></pre>
+        <div class="delivery-info__paragraphs">
+        
+        &nbsp;
+        
+        </div>
+<strong>&nbsp;</strong>
+<strong>&nbsp;</strong>   
+        <p class="m-2">{{ text_on_page }}</p>
+    </div>
+{% endblock %}
+
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 4icag0 2024</p>
+    </div>
+</footer>
+{% endblock %}
+

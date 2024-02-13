@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h2 style="text-align: center;"><span style="color: #ff6600; font-size: 36pt;">Магазин баскетбольной атрибутики</span></h2>
+<div class="mt-5 pt-5" style="text-align: center;">
+
+<span style="font-size: 24pt;"><strong>BASKET-SHOP</strong></span>
+
+</div>
+<p style="text-align: center;"><strong>Баскетбольный интернет магазин - Магазин BASKET-SHOP. </strong></p>
+<p style="text-align: center;"><strong>В нашем магазине всегда в можно подобрать баскетбольные кроссовки, мячи, баскетбольную форму на любой вкус.</strong></p>
+<strong>&nbsp;</strong>
+<strong>&nbsp;</strong>   
+        <p class="m-2">{{ text_on_page }}</p>
+    </div>
+{% endblock %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 4icag0 2024</p>
+    </div>
+</footer>
+{% endblock %}
+
