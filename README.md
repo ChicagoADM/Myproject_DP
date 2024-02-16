@@ -9,6 +9,8 @@ ___
 2)	Активация виртуального окружения: .venv\scripts\activate
 3)	Установка компонентов и переложений: pip install -r requirements.txt 
 ___
+В данном проекте по умолчанию установлена база данных [MySQL](https://dev.mysql.com/downloads/installer/)
+___
 Для корректного отображения шаблона статические файлы (static) находится по [ссылке](https://disk.yandex.ru/d/2MaXUE0sys6EPw)
 ___
 С готовым проектом можно ознакомится по ссылке [ссылке](https://4icag0.pythonanywhere.com/)
